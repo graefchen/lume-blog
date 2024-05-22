@@ -1,0 +1,12 @@
+---
+url: /
+layout: layouts/base.vto
+title: Graef's Blog - Home
+---
+
+<section>
+{{# Creating Cards for the last 3 blog entry's #}}
+{{ include "templates/post-list.vto" {
+	postslist: search.pages("type=post", "date=desc", 3)
+} }}
+</section>

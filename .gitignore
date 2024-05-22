@@ -1,0 +1,25 @@
+# Ignore everything
+*
+
+# Add below what you allow
+
+# Editor, etc config
+!/.vscode
+!/.vscode/**
+!.gitignore
+
+# lume & deno stuff
+!_config.ts
+!_cms.ts
+!deno.*
+
+# source
+!/src
+!/src/**
+
+# the readme markdown file
+!readme.md
+
+# the documentation files
+!/docs
+!/docs/**
