@@ -1,3 +1,3 @@
-# graefchen.github.com
+# lume
 
-A static website build with [lume](https://lume.land/).
+A personal minimalistic blog build with [lume](https://lume.land/).

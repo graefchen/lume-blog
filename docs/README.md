@@ -8,10 +8,14 @@ The _/_ page or _home_ page includes the 3 newest blog post ...
 
 The _about_ page is the simple about page.
 
-## archive
+## blog
 
-Both _archive_ and _archive_result_ are generators that generate pages with the
-_paginaton_ and the _search_ helpers.
+Both _blog_ and _archive_result_ are generators that generate pages with the
+_paginaton_ helper.
+
+## style.css
+
+the main css file that references all the styles
 
 # directories
 
@@ -19,16 +23,17 @@ _paginaton_ and the _search_ helpers.
 
 The _posts_ directory includes all blog posts.
 
-## uploads
+## \
 
-The _uploads_ directory includes all uploaded files that do not include blog posts.
+### layout
 
-# style
+### style
 
-## style.css
+All the styles including:
 
-the main css file
+- `print.css`, an CSS library for print
+- `reset.css`, an CSS reset
 
-# \_includes
+### templates
 
-# \_data
+## \_data

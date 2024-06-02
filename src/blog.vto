@@ -1,0 +1,16 @@
+---
+layout: layouts/base.vto
+title: graef::blog
+---
+
+<header >
+	<h1>blog</h1>
+</header>
+
+<ul>
+{{ for page of pageTags }}
+	<li><a href="{{ page.url }}" class="badge">{{ page.tag }}</a></li>
+{{ /for }}
+</ul>
+
+{{ include "templates/post-table.vto" { postslist: search.pages("type=post", "date=desc") } }}

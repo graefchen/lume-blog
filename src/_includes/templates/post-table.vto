@@ -1,0 +1,11 @@
+<table>
+<tbody>
+{{ for post of postslist }}
+{{ include "templates/post-entry.vto" {
+url: post.url,
+title: post.title,
+date: post.date
+} }}
+{{ /for }}
+</tbody>
+</table>

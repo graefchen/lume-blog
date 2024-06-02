@@ -1,0 +1,12 @@
+<tr>
+<td>
+<time datetime="{{ date |> date('DATETIME') }}">
+{{ date |> date('HUMAN_DATE') }}
+</time>
+</td>
+<td>
+<a href="{{ url }}" {{ if url == url }} aria-current="page"{{ /if }}>
+{{ title || url }}
+</a>
+</td>
+</tr>

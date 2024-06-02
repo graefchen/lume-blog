@@ -1,7 +1,6 @@
 {
     "deno.enable": true,
-    "editor.formatOnSave": false,
-    "[markdown]": {
-        "editor.formatOnSave": true
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }

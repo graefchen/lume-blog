@@ -3,15 +3,17 @@ layout: layouts/base.vto
 ---
 
 <article>
-	{{ if thumbnail }}
-		<img src="{{ thumbnail }}">
-	{{ /if }}
 	<h1>{{ title }}</h1>
+	<ul>
+		{{ for tag of tags}}
+		<li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+		{{ /for }}
+	</ul>
 	<p>
 		<time datetime="{{ date |> date('DATETIME') }}">
 		{{ date |> date('HUMAN_DATE') }}
 		</time>
 	</p>
 	<p>{{ excerpt |> md }}</p>
-	{{ content }}
+		{{ content }}
 </article>
