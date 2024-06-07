@@ -4,16 +4,22 @@ layout: layouts/base.vto
 
 <article>
 	<h1>{{ title }}</h1>
-	<ul>
+	<section>
+	<p>
 		{{ for tag of tags}}
-		<li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+<a class="tag c" href="/tags/{{ tag }}">{{ tag }}</a>
 		{{ /for }}
-	</ul>
+	</p>
 	<p>
 		<time datetime="{{ date |> date('DATETIME') }}">
 		{{ date |> date('HUMAN_DATE') }}
 		</time>
 	</p>
-	<p>{{ excerpt |> md }}</p>
+	<p>
+		{{ excerpt |> md }}
+	</p>
+	</section>
+	<section>
 		{{ content }}
+	</section>
 </article>

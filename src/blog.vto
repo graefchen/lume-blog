@@ -7,10 +7,10 @@ title: graef::blog
 	<h1>blog</h1>
 </header>
 
-<ul>
-{{ for page of pageTags }}
-	<li><a href="{{ page.url }}" class="badge">{{ page.tag }}</a></li>
+<p>
+{{ for tag of search.values("tags") }}
+<a class="tag c" href="/tags/{{ tag }}">{{ tag }}</a>
 {{ /for }}
-</ul>
+</p>
 
 {{ include "templates/post-table.vto" { postslist: search.pages("type=post", "date=desc") } }}

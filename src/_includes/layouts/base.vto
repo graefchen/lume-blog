@@ -13,13 +13,29 @@ title: Graef's Blog
 	<link rel="stylesheet" href="/styles.css">
 </head>
 
-<body>
-	<nav>
-		<a href="/">home</a> | <a href="/about">about</a> | <a href="/blog">blog</a>
-	</nav>
+<body class="b">
+	<header>
+		<nav class="nb">
+			<div class="tt">
+				<a class="tn" href="/">graef</a>
+			</div>
+			<div class="ln">
+				<div class="it c">
+					<a href="/about">about</a>
+				</div>
+				<div class="it c">
+					<a href="/blog">blog</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<hr>
 	<main>
 		{{ content }}
 	</main>
+	<footer class="f">
+		<p>Made by <a href="https://github.com/graefchen">graef</a> with <a href="https://lume.land">lume</a></p>
+	</footer>
 </body>
 
 </html>

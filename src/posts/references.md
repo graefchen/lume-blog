@@ -9,6 +9,8 @@ tags:
 draft: false
 ---
 
+## Blog Websites
+
 - [https://eatonphil.com](https://eatonphil.com/)
 - [https://heydonworks.com](https://heydonworks.com)
 - [https://romgrk.com](https://romgrk.com)
@@ -45,3 +47,10 @@ draft: false
 - [https://matthewstrom.com](https://matthewstrom.com)
 - [https://eva.town](https://eva.town)
 - [https://serene-demo.pages.dev](https://serene-demo.pages.dev)
+- [https://asindu.xyz](https://asindu.xyz)
+- [https://blog.mooriii.com](https://blog.mooriii.com)
+
+## Programming Language Websites
+
+- [https://shakti.com](https://shakti.com)
+- [https://iolanguage.org](https://iolanguage.org)
