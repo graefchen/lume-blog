@@ -15,16 +15,6 @@ cms.collection("Posts: Blog Posts", "src:posts/*.md", [
     description: "If checked, the post will not be published.",
   },
   {
-    name: "tags",
-    type: "list",
-    label: "Tags",
-    // deno-lint-ignore no-explicit-any
-    init(field: any) {
-      const { data } = field.cmsContent;
-      field.options = data.site?.search.values("tags");
-    },
-  },
-  {
     name: "excerpt",
     type: "text",
     attributes: {

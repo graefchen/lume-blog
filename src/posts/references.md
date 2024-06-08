@@ -45,6 +45,8 @@ draft: false
 - [https://serene-demo.pages.dev](https://serene-demo.pages.dev)
 - [https://asindu.xyz](https://asindu.xyz)
 - [https://blog.mooriii.com](https://blog.mooriii.com)
+- [https://egirl.ing](https://egirl.ing)
+- [https://dostoynikov.bearblog.dev](https://dostoynikov.bearblog.dev)
 
 ## Programming Language Websites
 
