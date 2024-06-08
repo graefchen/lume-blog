@@ -7,34 +7,31 @@ title: Graef's Blog
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>{{ title }}</title>
 	<link rel=icon href="data:,">
 	<link rel="stylesheet" href="/styles.css">
+	<meta property="og:title" content="{{title}}"/>
+	<meta property="og:description" content="A blog about all the interesting stuff."/>
+	<meta property="og:site_name" content="{{title}}"/>
+	<meta name="theme-color" content="#484a54"/>
 </head>
 
-<body class="b">
-	<header>
-		<nav class="nb">
-			<div class="tt">
-				<a class="tn" href="/">graef</a>
-			</div>
-			<div class="ln">
-				<div class="it c">
-					<a href="/about">about</a>
-				</div>
-				<div class="it c">
-					<a href="/blog">blog</a>
-				</div>
-			</div>
-		</nav>
+<body class="g b">
+	<header class="ma h">
+	<h3 class="l"><a href="/">⌘hm</a></h3>
+	<nav class="n">
+		<h3><a href="blog">⌘blg</a></h3>
+		<h3><a href="about">⌘bt</a></h3>
+	</nav>
 	</header>
-	<hr>
-	<main>
+	<main class="ma m md">
 		{{ content }}
 	</main>
-	<footer class="f">
-		<p>Made by <a href="https://github.com/graefchen">graef</a> with <a href="https://lume.land">lume</a></p>
+	<footer class="fu f gs">
+		<p class="p">
+			Made by <a href="https://github.com/graefchen">graef</a> with <a href="https://lume.land">lume</a>
+		</p>
 	</footer>
 </body>
 

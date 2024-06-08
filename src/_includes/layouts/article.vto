@@ -6,11 +6,6 @@ layout: layouts/base.vto
 	<h1>{{ title }}</h1>
 	<section>
 	<p>
-		{{ for tag of tags}}
-<a class="tag c" href="/tags/{{ tag }}">{{ tag }}</a>
-		{{ /for }}
-	</p>
-	<p>
 		<time datetime="{{ date |> date('DATETIME') }}">
 		{{ date |> date('HUMAN_DATE') }}
 		</time>

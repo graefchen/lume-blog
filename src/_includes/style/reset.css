@@ -114,9 +114,9 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-* + * {
+/* * + * {
   margin: 0.25em 0;
-}
+} */
 
 img {
   max-width: 100%;

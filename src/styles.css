@@ -1,3 +1,5 @@
+@import "style/reset.css";
+
 :root {
   --fl: #e5e9ea;
   --fd: #95999a;
@@ -5,4 +7,119 @@
   --el: #4e515a;
   --ed: #30323e;
   --br-s: 5px;
+  --br-m: 10px;
+  --br-b: 15px;
+  --br-f: 100%;
+}
+
+/* grid normal > small */
+
+.g {
+  display: grid;
+  grid-template-columns:
+    [full-start]
+    minmax(auto, 1fr)
+    [main-start]
+    min(100%, 65ch)
+    [main-end]
+    minmax(auto, 1fr)
+    [full-end];
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.g > .ma {
+  grid-column: main;
+  margin: 0.5rem;
+}
+
+.g > .fu {
+  grid-column: full;
+  background-color: var(--ed);
+  padding: 0.5rem;
+}
+
+.gs {
+  display: grid;
+  grid-template-columns:
+    auto
+    [main-start]
+    min(100%, 60ch)
+    [main-end]
+    auto;
+}
+
+.gs > * {
+  grid-column: main;
+}
+
+/* body */
+
+.b {
+  background-color: var(--b);
+  color: var(--fl);
+}
+
+.h {
+  grid-column: main;
+  display: flex;
+  justify-content: space-between;
+}
+
+.h > * {
+  padding: 0.5rem;
+}
+
+.h a {
+  color: var(--fl);
+  &:hover {
+    color: var(--fd);
+  }
+}
+
+.h > .n {
+  display: flex;
+  gap: 2rem;
+}
+
+.f > .p {
+  text-align: center;
+  grid-column: main;
+  color: var(--fd);
+  > a {
+    color: var(--fl);
+  }
+}
+
+/* mardown */
+
+.md {
+  > h1 {
+    text-align: center;
+  }
+}
+
+.er {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.er > .ms {
+  border-radius: var(--br-b);
+  background-color: var(--ed);
+  color: var(--fd);
+  padding: 2rem;
+  text-align: center;
+
+  transform: scale(1.5);
+
+  > p > a {
+    color: var(--fd);
+    &:hover {
+      color: var(--fl);
+    }
+  }
 }
