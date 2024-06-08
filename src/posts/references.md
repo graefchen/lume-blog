@@ -2,10 +2,6 @@
 title: References
 excerpt: References used to write this website
 date: "2024-04-14"
-tags:
-  - HTML
-  - CSS
-  - Web Design
 draft: false
 ---
 
