@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: var(--m-s);
+  margin-top: var(--m-l);
   margin-bottom: var(--m-l);
 }
 
