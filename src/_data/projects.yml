@@ -1,0 +1,40 @@
+projects:
+  - name: six-five-oh-two
+    language: rust
+    description: mos 6502 emulator
+    link: https://github.com/graefchen/six-five-oh-two
+
+  - name: 1kbpf
+    language: html
+    description: portfolio website under 1kb
+    link: https://github.com/graefchen/1kbpf
+
+  - name: starbound-nb
+    language: python
+    description: a starbound jpynb
+    link: https://github.com/graefchen/starbound-nb
+
+  - name: chisai.css
+    language: css
+    description: minimal css framework
+    link: https://github.com/graefchen/chisai.css
+
+  - name: mini-server
+    language: rust
+    description: bad web server
+    link: https://github.com/graefchen/mini-server
+
+  - name: walk
+    language: nushell
+    description: bookmark module
+    link: https://github.com/graefchen/walk
+
+  - name: wrack
+    language: rust
+    description: rusted chip-8 implementation
+    link: https://github.com/graefchen/wrack
+
+  - name: tools4win
+    language: c
+    description: some unix command for windows
+    link: https://github.com/graefchen/tools4win

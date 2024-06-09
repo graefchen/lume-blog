@@ -2,8 +2,9 @@
 title: Examples
 data: "2024-06-09"
 draft: false
-excerpt: Just all the examples to write content with.
 ---
+
+> Just all the examples to write content with.
 
 # Heading 1
 
@@ -25,7 +26,7 @@ Paragraph with _italic_ text.
 
 Paragraph with ~~strikethrough~~ text.
 
-Paragraph with a [link](www.example.com)
+Paragraph with a [link](https://www.example.com)
 
 # Ordered list:
 
