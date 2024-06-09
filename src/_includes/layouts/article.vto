@@ -2,17 +2,17 @@
 layout: layouts/base.vto
 ---
 
-<article>
-	<h1>{{ title }}</h1>
+<article class="md">
 	<section>
-	<p>
-		<time datetime="{{ date |> date('DATETIME') }}">
-		{{ date |> date('HUMAN_DATE') }}
-		</time>
-	</p>
-	<p>
-		{{ excerpt |> md }}
-	</p>
+		<h1>{{ title }}</h1>
+		<p>
+			<time datetime="{{ date |> date('DATETIME') }}">
+			{{ date |> date('HUMAN_DATE') }}
+			</time>
+		</p>
+		<blockquote>
+			{{ excerpt |> md }}
+		</blockquote>
 	</section>
 	<section>
 		{{ content }}

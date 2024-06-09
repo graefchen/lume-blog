@@ -1,0 +1,21 @@
+---
+title: graef::blog
+layout: layouts/base.vto
+---
+
+<h1 class="tc">blog</h1>
+
+<ul class="u">
+{{for page of search.pages("type=post")}}
+	<li>
+	<a class="l" href="{{ page.url }}" {{ if page.url == url }} aria-current="page"{{ /if }}>
+		<time datetime="{{ page.date |> date('DATETIME') }}">
+			{{ page.date |> date('HUMAN_DATE') }}
+		</time>
+		<span>
+			{{ page.title || page.url }}
+		</span>
+	</a>
+	</li>
+{{/for}}
+</ul>

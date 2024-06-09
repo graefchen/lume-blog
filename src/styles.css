@@ -1,19 +1,27 @@
 @import "style/reset.css";
 
 :root {
+  /*colours*/
   --fl: #e5e9ea;
   --fd: #95999a;
   --b: #484a54;
   --el: #4e515a;
   --ed: #30323e;
+  /*border*/
   --br-s: 5px;
   --br-m: 10px;
   --br-b: 15px;
   --br-f: 100%;
+  /*margin, padding,gap */
+  --m-s: 0.5rem;
+  --m-l: 2rem;
+  --p-s: 0.5rem;
+  --p-l: 2rem;
+  --g-s: 0.5rem;
+  --g-l: 2rem;
 }
 
 /* grid normal > small */
-
 .g {
   display: grid;
   grid-template-columns:
@@ -31,13 +39,13 @@
 
 .g > .ma {
   grid-column: main;
-  margin: 0.5rem;
+  margin: var(--m-s);
 }
 
 .g > .fu {
   grid-column: full;
   background-color: var(--ed);
-  padding: 0.5rem;
+  padding: var(--p-s);
 }
 
 .gs {
@@ -54,8 +62,12 @@
   grid-column: main;
 }
 
-/* body */
+/* helper classes*/
+.tc {
+  text-align: center;
+}
 
+/* body */
 .b {
   background-color: var(--b);
   color: var(--fl);
@@ -68,7 +80,7 @@
 }
 
 .h > * {
-  padding: 0.5rem;
+  padding: var(--p-s);
 }
 
 .h a {
@@ -80,7 +92,7 @@
 
 .h > .n {
   display: flex;
-  gap: 2rem;
+  gap: var(--g-l);
 }
 
 .f > .p {
@@ -89,17 +101,46 @@
   color: var(--fd);
   > a {
     color: var(--fl);
+    &:hover {
+      border-bottom: 1px dotted var(--fl);
+    }
   }
 }
 
 /* mardown */
-
 .md {
-  > h1 {
-    text-align: center;
+  padding-bottom: var(--p-l);
+  a {
+    color: var(--fd);
+    &:hover {
+      color: var(--fl);
+    }
+  }
+  blockquote,
+  pre {
+    background-color: var(--el);
+    padding: var(--p-s);
+  }
+  blockquote {
+    border-left: 2px solid var(--fl);
+  }
+  hr {
+    color: var(--el);
+  }
+  ul,
+  ol {
+    /* get on li l long xxxxviii (myb xxlviii) */
+    padding-left: 8ch;
+  }
+  ul {
+    list-style: disc;
+  }
+  ol {
+    list-style: lower-roman;
   }
 }
 
+/* 404 */
 .er {
   display: grid;
   justify-content: center;
@@ -111,7 +152,7 @@
   border-radius: var(--br-b);
   background-color: var(--ed);
   color: var(--fd);
-  padding: 2rem;
+  padding: var(--p-l);
   text-align: center;
 
   transform: scale(1.5);
@@ -121,5 +162,24 @@
     &:hover {
       color: var(--fl);
     }
+  }
+}
+
+/* list */
+.u {
+  margin-top: var(--m-l);
+  display: grid;
+}
+
+.l {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--p-s);
+  color: var(--fd);
+
+  &:hover {
+    background-color: var(--ed);
+    color: var(--fl);
+    border-radius: var(--br-m);
   }
 }

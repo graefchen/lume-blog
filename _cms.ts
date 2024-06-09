@@ -5,7 +5,7 @@ const cms = lumeCMS();
 cms.storage("my_files", "uploads");
 
 // The Blog Posts
-cms.collection("Posts: Blog Posts", "src:posts/*.md", [
+cms.collection("Blog: Blog Posts", "src:blog/*.md", [
   "title: text",
   "data: date",
   {
