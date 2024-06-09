@@ -1,9 +1,10 @@
 ---
 title: Examples
-data: '2024-06-09'
+data: "2024-06-09"
 draft: false
 excerpt: Just all the examples to write content with.
 ---
+
 # Heading 1
 
 ## Heading 2
@@ -27,6 +28,7 @@ Paragraph with ~~strikethrough~~ text.
 Paragraph with a [link](www.example.com)
 
 # Ordered list:
+
 1. One
 2. Two
 3. Three
@@ -34,9 +36,17 @@ Paragraph with a [link](www.example.com)
 5. Five
 
 # Unordere lits:
+
 - One
 - Two
 - Three
 - Four
 - Five
 
+And below there are some cute pictures of animals.
+
+---
+
+![Lamas](/imgs/mauro-lima-2ju6hickHo8-unsplash.jpg)
+
+![Owls](/imgs/kevin-charit-MnpzTVoyFXI-unsplash.jpg)

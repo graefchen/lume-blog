@@ -180,10 +180,17 @@ a {
     }
     margin-bottom: var(--m-s);
   }
+  a {
+    background-color: var(--ed);
+    padding-left: var(--p-s);
+    padding-right: var(--p-s);
+    border-radius: var(--br-s);
+  }
   blockquote,
   pre {
     background-color: var(--el);
     padding: var(--p-s);
+    white-space: pre-wrap;
   }
   blockquote {
     border-left: 2px solid var(--fl);
