@@ -12,7 +12,7 @@
   --br-m: 10px;
   --br-l: 15px;
   --br-f: 100%;
-  /*margin,padding,gap */
+  /*margin>padding>gap*/
   --m-s: 0.5rem;
   --m-m: 1.25rem;
   --m-l: 2rem;
@@ -22,7 +22,7 @@
   --g-s: 0.5rem;
   --g-l: 2rem;
 }
-
+/*elements*/
 h1:not(.fof),
 h2,
 h3,
@@ -32,11 +32,9 @@ h6 {
   margin-top: var(--m-l);
   margin-bottom: var(--m-l);
 }
-
 img {
   max-width: 100%;
 }
-
 a {
   color: var(--fl);
   text-decoration: underline;
@@ -45,8 +43,7 @@ a {
     text-decoration: none;
   }
 }
-
-/* grid normal > small */
+/*grid[normal>small]*/
 .g {
   display: grid;
   grid-template-columns:
@@ -60,19 +57,16 @@ a {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   min-height: 100svh;
+  > .ma {
+    grid-column: main;
+    margin: var(--m-s);
+  }
+  > .fu {
+    grid-column: full;
+    background-color: var(--ed);
+    padding: var(--p-s);
+  }
 }
-
-.g > .ma {
-  grid-column: main;
-  margin: var(--m-s);
-}
-
-.g > .fu {
-  grid-column: full;
-  background-color: var(--ed);
-  padding: var(--p-s);
-}
-
 .gs {
   display: grid;
   grid-template-columns:
@@ -81,58 +75,48 @@ a {
     min(100%, 60ch)
     [main-end]
     auto;
+  > * {
+    grid-column: main;
+  }
 }
-
-.gs > * {
-  grid-column: main;
-}
-
-/* helper classes*/
+/*helper classes*/
 .tc {
   text-align: center;
 }
-
 .fg {
   filter: grayscale(50%);
 }
-
 .fl {
   color: var(--fl);
 }
-
 .fd {
   color: var(--fd);
 }
-
 .brf {
   border-radius: var(--br-f);
 }
-
-/* body */
+/*body*/
 .b {
   background-color: var(--b);
   color: var(--fl);
 }
-
+/*header*/
 .h {
   grid-column: main;
   display: flex;
   justify-content: space-between;
+  > * {
+    padding: var(--p-s);
+  }
+  a {
+    text-decoration: none;
+  }
+  > .n {
+    display: flex;
+    gap: var(--g-l);
+  }
 }
-
-.h > * {
-  padding: var(--p-s);
-}
-
-.h a {
-  text-decoration: none;
-}
-
-.h > .n {
-  display: flex;
-  gap: var(--g-l);
-}
-
+/*footer*/
 .f {
   margin-top: var(--m-l);
   > .p {
@@ -143,19 +127,16 @@ a {
     }
   }
 }
-
-/* homepga */
+/*homepage*/
 .ih {
   display: flex;
   justify-content: center;
   margin-bottom: var(--m-l);
+  .im {
+    width: max(10ch, 40%);
+  }
 }
-
-.im {
-  width: max(10ch, 40%);
-}
-
-/* mardown */
+/*mardown*/
 .md {
   > section {
     margin-bottom: var(--m-l);
@@ -163,7 +144,7 @@ a {
       margin-bottom: var(--m-m);
     }
   }
-  /* details */
+  /*details*/
   .d {
     color: var(--fd);
     display: flex;
@@ -177,6 +158,7 @@ a {
     }
     margin-bottom: var(--m-s);
   }
+  /*elements*/
   blockquote,
   pre {
     background-color: var(--el);
@@ -191,7 +173,7 @@ a {
   }
   ul,
   ol {
-    /* get on li l long xxxxviii (myb xxlviii) */
+    /*get on li l long xxxxviii (myb xxlviii)*/
     padding-left: 8ch;
   }
   ul {
@@ -204,54 +186,48 @@ a {
     width: 100%;
   }
 }
-
-/* 404 */
+/*404*/
 .er {
   display: grid;
   justify-content: center;
   align-items: center;
   min-height: 100%;
-}
-
-.er > .ms {
-  border-radius: var(--br-l);
-  background-color: var(--ed);
-  color: var(--fd);
-  padding: var(--p-l);
-  text-align: center;
-
-  transform: scale(1.5);
-
-  > p > a {
+  > .ms {
+    border-radius: var(--br-l);
+    background-color: var(--ed);
     color: var(--fd);
-    &:hover {
-      color: var(--fl);
+    padding: var(--p-l);
+    text-align: center;
+    transform: scale(1.5);
+    > p > a {
+      color: var(--fd);
+      &:hover {
+        color: var(--fl);
+      }
     }
   }
 }
-
-/* list */
+/*list*/
 .u {
   margin-top: var(--m-l);
   display: grid;
   gap: var(--g-s);
-}
-
-.l {
-  display: flex;
-  justify-content: space-between;
-  padding: var(--p-s) var(--p-m);
-  color: var(--fd);
-  background-color: var(--ed);
-  border-radius: var(--br-m);
-  text-decoration: none;
-
-  &:hover {
-    color: var(--fl);
+  .l {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--p-s) var(--p-m);
+    color: var(--fd);
+    background-color: var(--ed);
+    border-radius: var(--br-m);
+    text-decoration: none;
+    transition-duration: 200ms;
+    &:hover {
+      color: var(--fl);
+      transform: translateY(-2px);
+    }
   }
 }
-
-/* project grid */
+/*project grid*/
 .pg {
   margin-top: var(--m-m);
   display: grid;
@@ -273,8 +249,10 @@ a {
         align-self: flex-end;
       }
     }
+    transition-duration: 200ms;
     &:hover {
       color: var(--fl);
+      transform: translateY(-2px);
     }
   }
 }
