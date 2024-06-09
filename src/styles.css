@@ -14,11 +14,34 @@
   --br-f: 100%;
   /*margin, padding,gap */
   --m-s: 0.5rem;
+  --m-m: 1.25rem;
   --m-l: 2rem;
   --p-s: 0.5rem;
+  --p-m: 1.25rem;
   --p-l: 2rem;
   --g-s: 0.5rem;
   --g-l: 2rem;
+}
+
+h1:not(.fof),
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: var(--m-s);
+  margin-bottom: var(--m-l);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--fd);
+  &:hover {
+    color: var(--fl);
+  }
 }
 
 /* grid normal > small */
@@ -67,6 +90,26 @@
   text-align: center;
 }
 
+.fg {
+  filter: grayscale(50%);
+}
+
+.fl {
+  color: var(--fl);
+}
+
+.fd {
+  color: var(--fd);
+}
+
+.brf {
+  border-radius: var(--br-f);
+}
+
+.lhu:hover {
+  border-bottom: 1px dotted var(--fl);
+}
+
 /* body */
 .b {
   background-color: var(--b);
@@ -96,15 +139,22 @@
 }
 
 .f > .p {
-  text-align: center;
   grid-column: main;
   color: var(--fd);
   > a {
     color: var(--fl);
-    &:hover {
-      border-bottom: 1px dotted var(--fl);
-    }
   }
+}
+
+/* homepga */
+.ih {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--m-l);
+}
+
+.im {
+  width: max(10ch, 40%);
 }
 
 /* mardown */
@@ -112,6 +162,9 @@
   padding-bottom: var(--p-l);
   > section {
     margin-bottom: var(--m-l);
+    > * {
+      margin-bottom: var(--m-m);
+    }
   }
   /* details */
   .d {
@@ -126,21 +179,6 @@
       align-self: stretch;
     }
     margin-bottom: var(--m-s);
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: var(--m-s);
-    margin-bottom: var(--m-l);
-  }
-  a {
-    color: var(--fd);
-    &:hover {
-      color: var(--fl);
-    }
   }
   blockquote,
   pre {
@@ -163,6 +201,9 @@
   }
   ol {
     list-style: lower-roman;
+  }
+  img {
+    width: 100%;
   }
 }
 
@@ -195,17 +236,18 @@
 .u {
   margin-top: var(--m-l);
   display: grid;
+  gap: var(--g-s);
 }
 
 .l {
   display: flex;
   justify-content: space-between;
-  padding: var(--p-s);
+  padding: var(--p-s) var(--p-m);
   color: var(--fd);
+  background-color: var(--ed);
+  border-radius: var(--br-m);
 
   &:hover {
-    background-color: var(--ed);
     color: var(--fl);
-    border-radius: var(--br-m);
   }
 }

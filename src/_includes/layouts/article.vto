@@ -14,9 +14,11 @@ layout: layouts/base.vto
 			<p>words: {{ it.readingInfo.words }}</p>
 			<p> min read: {{ it.readingInfo.minutes }}</p>
 		</div>
+		{{ if excerpt }}
 		<blockquote>
 			{{ excerpt |> md }}
 		</blockquote>
+		{{ /if}}
 	</section>
 	<section>
 		{{ content }}
