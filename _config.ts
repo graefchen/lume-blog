@@ -4,6 +4,7 @@ import robots from "lume/plugins/robots.ts";
 import date from "lume/plugins/date.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
+import readingInfo from "lume/plugins/reading_info.ts";
 
 const site = lume({ src: "src/" });
 site.copy("uploads").copy("styles.css").copy("_includes/style", "style");
@@ -24,6 +25,7 @@ site
   )
   .use(minifyHTML())
   .use(date())
-  .use(codeHighlight());
+  .use(codeHighlight())
+  .use(readingInfo());
 
 export default site;

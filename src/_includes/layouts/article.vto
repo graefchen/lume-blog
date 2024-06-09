@@ -5,11 +5,15 @@ layout: layouts/base.vto
 <article class="md">
 	<section>
 		<h1>{{ title }}</h1>
-		<p>
-			<time datetime="{{ date |> date('DATETIME') }}">
-			{{ date |> date('HUMAN_DATE') }}
-			</time>
-		</p>
+		<div class="d">
+			<p>
+				<time datetime="{{ date |> date('DATETIME') }}">
+				{{ date |> date('HUMAN_DATE') }}
+				</time>
+			</p>
+			<p>words: {{ it.readingInfo.words }}</p>
+			<p> min read: {{ it.readingInfo.minutes }}</p>
+		</div>
 		<blockquote>
 			{{ excerpt |> md }}
 		</blockquote>

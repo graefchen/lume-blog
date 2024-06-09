@@ -1,7 +1,7 @@
 ---
 title: Introduction
 excerpt: Some say ...
-data: "2024-04-19"
+date: "2024-04-19"
 draft: false
 ---
 

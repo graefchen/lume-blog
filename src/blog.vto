@@ -6,7 +6,7 @@ layout: layouts/base.vto
 <h1 class="tc">blog</h1>
 
 <ul class="u">
-{{for page of search.pages("type=post")}}
+{{for page of search.pages("type=post", "date=desc")}}
 	<li>
 	<a class="l" href="{{ page.url }}" {{ if page.url == url }} aria-current="page"{{ /if }}>
 		<time datetime="{{ page.date |> date('DATETIME') }}">

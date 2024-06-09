@@ -110,6 +110,32 @@
 /* mardown */
 .md {
   padding-bottom: var(--p-l);
+  > section {
+    margin-bottom: var(--m-l);
+  }
+  /* details */
+  .d {
+    color: var(--fd);
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: var(--g-s);
+    align-items: center;
+    & p:nth-child(-n + 2)::after {
+      content: "•";
+      padding-left: var(--p-s);
+      align-self: stretch;
+    }
+    margin-bottom: var(--m-s);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: var(--m-s);
+    margin-bottom: var(--m-l);
+  }
   a {
     color: var(--fd);
     &:hover {
