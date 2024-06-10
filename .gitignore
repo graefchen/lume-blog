@@ -19,7 +19,3 @@
 
 # the readme markdown file
 !readme.md
-
-# the documentation files
-!/docs
-!/docs/**
