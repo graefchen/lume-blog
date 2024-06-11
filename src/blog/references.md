@@ -48,6 +48,8 @@ draft: false
 - [https://blog.mooriii.com](https://blog.mooriii.com)
 - [https://egirl.ing](https://egirl.ing)
 - [https://dostoynikov.bearblog.dev](https://dostoynikov.bearblog.dev)
+- [https://www.datagubbe.se/stupidslow/](https://www.datagubbe.se/stupidslow/)
+- [https://dostoynikov.bearblog.dev](https://dostoynikov.bearblog.dev)
 
 ## Programming Language Websites
 

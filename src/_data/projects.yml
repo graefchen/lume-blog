@@ -1,8 +1,28 @@
 projects:
+  - name: lume-blog
+    language: vento/css
+    description: this personal blog
+    link: https://github.com/graefchen/lume-blog
+
   - name: six-five-oh-two
     language: rust
     description: mos 6502 emulator
     link: https://github.com/graefchen/six-five-oh-two
+
+  - name: webdev
+    language: javascript
+    description: various things repository
+    link: https://github.com/graefchen/webdev
+
+  - name: graefs-stream
+    language: typescript
+    description: fresh app using stapil
+    link: https://github.com/graefchen/graefs-steam
+
+  - name: stapil
+    language: typescript
+    description: deno steam web API wrapper
+    link: https://github.com/graefchen/webdev
 
   - name: 1kbpf
     language: html
@@ -11,7 +31,7 @@ projects:
 
   - name: starbound-nb
     language: python
-    description: a starbound jpynb
+    description: starbound jupyter notebook
     link: https://github.com/graefchen/starbound-nb
 
   - name: chisai.css
@@ -33,8 +53,3 @@ projects:
     language: rust
     description: rusted chip-8 implementation
     link: https://github.com/graefchen/wrack
-
-  - name: tools4win
-    language: c
-    description: some unix command for windows
-    link: https://github.com/graefchen/tools4win
