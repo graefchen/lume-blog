@@ -1,4 +1,8 @@
 projects:
+  - name: ROT13
+    description: fun recreational programming
+    link: https://github.com/graefchen/lume-blog
+
   - name: lume-blog
     language: vento/css
     description: this personal blog
