@@ -1,10 +1,11 @@
 projects:
   - name: ROT13
+    language: rust
     description: fun recreational programming
     link: https://github.com/graefchen/lume-blog
 
   - name: lume-blog
-    language: vento/css
+    language: css
     description: this personal blog
     link: https://github.com/graefchen/lume-blog
 
@@ -18,6 +19,11 @@ projects:
     description: various things repository
     link: https://github.com/graefchen/webdev
 
+  - name: config
+    language: nushell
+    description: just config files
+    link: https://github.com/graefchen/config
+
   - name: graefs-stream
     language: typescript
     description: fresh app using stapil
@@ -27,6 +33,21 @@ projects:
     language: typescript
     description: deno steam web API wrapper
     link: https://github.com/graefchen/webdev
+
+  - name: ghc.css
+    language: typescript
+    description: generated css sylesheet
+    link: https://github.com/graefchen/ghc.css
+
+  - name: blog
+    language: html
+    description: blog, html only
+    link: https://github.com/graefchen/blog
+
+  - name: embeded-lua
+    language: c++
+    description: lua inside cpp
+    link: https://github.com/graefchen/embeded-lua
 
   - name: 1kbpf
     language: html
@@ -42,6 +63,11 @@ projects:
     language: css
     description: minimal css framework
     link: https://github.com/graefchen/chisai.css
+
+  - name: gh-colors
+    language: javascript
+    description: 🎨 all github lang colors
+    link: https://github.com/graefchen/gh-colors
 
   - name: mini-server
     language: rust

@@ -1,4 +1,5 @@
 @import "style/reset.css";
+@import "style/lc.css";
 
 :root {
   /*colours*/
@@ -22,6 +23,7 @@
   --g-s: 0.5rem;
   --g-l: 2rem;
 }
+
 /*elements*/
 h1:not(.fof),
 h2,
@@ -32,118 +34,135 @@ h6 {
   margin-top: var(--m-l);
   margin-bottom: var(--m-l);
 }
+
 img {
   max-width: 100%;
 }
+
 a {
   color: var(--fl);
   text-decoration: underline;
+
   &:hover {
     color: var(--fd);
     text-decoration: none;
   }
 }
+
 /*grid[normal>small]*/
 .g {
   display: grid;
-  grid-template-columns:
-    [full-start]
-    minmax(auto, 1fr)
-    [main-start]
-    min(100%, 65ch)
-    [main-end]
-    minmax(auto, 1fr)
-    [full-end];
+  grid-template-columns: [full-start] minmax(auto, 1fr) [main-start] min(
+      100%,
+      65ch
+    ) [main-end] minmax(auto, 1fr) [full-end];
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   min-height: 100svh;
+
   > .ma {
     grid-column: main;
     margin: var(--m-s);
   }
+
   > .fu {
     grid-column: full;
     background-color: var(--ed);
     padding: var(--p-s);
   }
 }
+
 .gs {
   display: grid;
-  grid-template-columns:
-    auto
-    [main-start]
-    min(100%, 60ch)
-    [main-end]
-    auto;
+  grid-template-columns: auto [main-start] min(100%, 60ch) [main-end] auto;
+
   > * {
     grid-column: main;
   }
 }
+
 /*helper classes*/
 .tc {
   text-align: center;
 }
+
 .fg {
   filter: grayscale(50%);
 }
+
 .fl {
   color: var(--fl);
 }
+
 .fd {
   color: var(--fd);
 }
+
 .brf {
   border-radius: var(--br-f);
 }
+
 /*body*/
 .b {
   background-color: var(--b);
   color: var(--fl);
 }
+
 /*header*/
 .h {
   grid-column: main;
   display: flex;
   justify-content: space-between;
+
   > * {
     padding: var(--p-s);
   }
+
   a {
     text-decoration: none;
   }
+
   > .n {
     display: flex;
     gap: var(--g-l);
   }
 }
+
 /*footer*/
 .f {
   margin-top: var(--m-l);
+
   > .p {
     grid-column: main;
     color: var(--fd);
+
     > a {
       color: var(--fl);
     }
   }
 }
+
 /*homepage*/
 .ih {
   display: flex;
   justify-content: center;
   margin-bottom: var(--m-l);
+
   .im {
     width: max(10ch, 40%);
   }
 }
+
 /*mardown*/
 .md {
   > section {
     margin-bottom: var(--m-l);
+
     > * {
       margin-bottom: var(--m-m);
     }
   }
+
   /*details*/
   .d {
     color: var(--fd);
@@ -151,13 +170,16 @@ a {
     flex-flow: row wrap;
     column-gap: var(--g-s);
     align-items: center;
+
     & p:nth-child(-n + 2)::after {
       content: "•";
       padding-left: var(--p-s);
       align-self: stretch;
     }
+
     margin-bottom: var(--m-s);
   }
+
   /*elements*/
   blockquote,
   pre {
@@ -165,33 +187,41 @@ a {
     padding: var(--p-s);
     white-space: pre-wrap;
   }
+
   blockquote {
     border-left: 2px solid var(--fl);
   }
+
   hr {
     color: var(--el);
   }
+
   ul,
   ol {
     /*get on li l long xxxxviii (myb xxlviii)*/
     padding-left: 8ch;
   }
+
   ul {
     list-style: disc;
   }
+
   ol {
     list-style: lower-roman;
   }
+
   img {
     width: 100%;
   }
 }
+
 /*404*/
 .er {
   display: grid;
   justify-content: center;
   align-items: center;
   min-height: 100%;
+
   > .ms {
     border-radius: var(--br-l);
     background-color: var(--ed);
@@ -199,19 +229,23 @@ a {
     padding: var(--p-l);
     text-align: center;
     transform: scale(1.5);
+
     > p > a {
       color: var(--fd);
+
       &:hover {
         color: var(--fl);
       }
     }
   }
 }
+
 /*list*/
 .u {
   margin-top: var(--m-l);
   display: grid;
   gap: var(--g-s);
+
   .l {
     display: flex;
     justify-content: space-between;
@@ -221,18 +255,21 @@ a {
     border-radius: var(--br-m);
     text-decoration: none;
     transition-duration: 200ms;
+
     &:hover {
       color: var(--fl);
       transform: translateY(-2px);
     }
   }
 }
+
 /*project grid*/
 .pg {
   margin-top: var(--m-m);
   display: grid;
   gap: var(--g-s);
   grid-template-columns: repeat(3, 1fr);
+
   > .st {
     aspect-ratio: 1;
     background-color: var(--ed);
@@ -243,13 +280,17 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     &:last-child {
       align-self: flex-end;
     }
+
     p {
       line-height: 0.9;
     }
+
     transition-duration: 200ms;
+
     &:hover {
       color: var(--fl);
       transform: translateY(-2px);

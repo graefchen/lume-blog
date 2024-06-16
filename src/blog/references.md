@@ -50,6 +50,7 @@ draft: false
 - [https://dostoynikov.bearblog.dev](https://dostoynikov.bearblog.dev)
 - [https://www.datagubbe.se/stupidslow/](https://www.datagubbe.se/stupidslow/)
 - [https://dostoynikov.bearblog.dev](https://dostoynikov.bearblog.dev)
+- [https://maxleiter.com](https://maxleiter.com)
 
 ## Programming Language Websites
 
