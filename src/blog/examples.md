@@ -1,7 +1,7 @@
 ---
 title: Examples
 data: "2024-06-09"
-draft: false
+draft: true
 ---
 
 > Just all the examples to write content with.
