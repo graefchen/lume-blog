@@ -4,7 +4,6 @@
 		0 6px 20px 0 #555555;
 }
 
-
 .lc--c\+\+-shadow:hover {
 	box-shadow:
 		0 4px 8px 0 #f34b7d,
@@ -23,7 +22,6 @@
 		0 6px 20px 0 #00b4ab;
 }
 
-
 .lc--go-shadow:hover {
 	box-shadow:
 		0 4px 8px 0 #00add8,
@@ -35,7 +33,6 @@
 		0 4px 8px 0 #5e5086,
 		0 6px 20px 0 #5e5086;
 }
-
 
 .lc--html-shadow:hover {
 	box-shadow:
@@ -49,13 +46,11 @@
 		0 6px 20px 0 #b07219;
 }
 
-
 .lc--javascript-shadow:hover {
 	box-shadow:
 		0 4px 8px 0 #f1e05a,
 		0 6px 20px 0 #f1e05a;
 }
-
 
 .lc--lua-shadow:hover {
 	box-shadow:
@@ -63,13 +58,11 @@
 		0 6px 20px 0 #000080;
 }
 
-
 .lc--nushell-shadow:hover {
 	box-shadow:
 		0 4px 8px 0 #4e9906,
 		0 6px 20px 0 #4e9906;
 }
-
 
 .lc--odin-shadow:hover {
 	box-shadow:
@@ -83,13 +76,11 @@
 		0 6px 20px 0 #3572a5;
 }
 
-
 .lc--rust-shadow:hover {
 	box-shadow:
 		0 4px 8px 0 #dea584,
 		0 6px 20px 0 #dea584;
 }
-
 
 .lc--typescript-shadow:hover {
 	box-shadow:
