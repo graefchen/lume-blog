@@ -1,6 +1,6 @@
 ---
 title: Examples
-data: "2024-06-09"
+date: 2024-06-09
 draft: true
 ---
 

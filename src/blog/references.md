@@ -1,7 +1,7 @@
 ---
 title: References
-date: "2024-04-14"
-draft: true
+date: 2024-04-14
+draft: false
 ---
 
 > Some of the References used to write this website
@@ -49,7 +49,6 @@ draft: true
 - [https://egirl.ing](https://egirl.ing)
 - [https://dostoynikov.bearblog.dev](https://dostoynikov.bearblog.dev)
 - [https://www.datagubbe.se/stupidslow/](https://www.datagubbe.se/stupidslow/)
-- [https://dostoynikov.bearblog.dev](https://dostoynikov.bearblog.dev)
 - [https://maxleiter.com](https://maxleiter.com)
 
 ## Programming Language Websites
