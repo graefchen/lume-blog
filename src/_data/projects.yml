@@ -1,4 +1,9 @@
 projects:
+  - name: graefchen.github.io
+    language: css
+    description: my website
+    link: https://graefchen.github.io
+
   - name: rtt
     language: c
     description: rotate by X
@@ -8,6 +13,11 @@ projects:
     language: rust
     description: fun recreational programming
     link: https://github.com/graefchen/ROT13
+
+  - name: esolang
+    language: c
+    description: collection of esoteric languages
+    link: https://github.com/graefchen/esolangs
 
   - name: lume-blog
     language: css
@@ -39,18 +49,13 @@ projects:
     description: deno steam web API wrapper
     link: https://github.com/graefchen/stapil
 
-  - name: ghc.css
-    language: typescript
-    description: generated css sylesheet
-    link: https://github.com/graefchen/ghc.css
-
   - name: blog
     language: html
     description: blog, html only
     link: https://github.com/graefchen/blog
 
   - name: embeded-lua
-    language: c++
+    language: cpp
     description: lua inside cpp
     link: https://github.com/graefchen/embeded-lua
 
