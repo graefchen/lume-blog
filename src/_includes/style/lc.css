@@ -1,89 +1,31 @@
-.lc--c-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #555555,
-		0 6px 20px 0 #555555;
-}
-
 .lc--cpp-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #f34b7d,
-		0 6px 20px 0 #f34b7d;
+  box-shadow: 0 4px 8px 0 #f34b7d, 0 6px 20px 0 #f34b7d;
 }
 
 .lc--css-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #563d7c,
-		0 6px 20px 0 #563d7c;
-}
-
-.lc--dart-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #00b4ab,
-		0 6px 20px 0 #00b4ab;
-}
-
-.lc--go-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #00add8,
-		0 6px 20px 0 #00add8;
-}
-
-.lc--haskell-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #5e5086,
-		0 6px 20px 0 #5e5086;
+  box-shadow: 0 4px 8px 0 #663399, 0 6px 20px 0 #663399;
 }
 
 .lc--html-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #e34c26,
-		0 6px 20px 0 #e34c26;
-}
-
-.lc--java-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #b07219,
-		0 6px 20px 0 #b07219;
-}
-
-.lc--javascript-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #f1e05a,
-		0 6px 20px 0 #f1e05a;
-}
-
-.lc--lua-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #000080,
-		0 6px 20px 0 #000080;
+  box-shadow: 0 4px 8px 0 #e34c26, 0 6px 20px 0 #e34c26;
 }
 
 .lc--nushell-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #4e9906,
-		0 6px 20px 0 #4e9906;
-}
-
-.lc--odin-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #60affe,
-		0 6px 20px 0 #60affe;
-}
-
-.lc--python-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #3572a5,
-		0 6px 20px 0 #3572a5;
+  box-shadow: 0 4px 8px 0 #4e9906, 0 6px 20px 0 #4e9906;
 }
 
 .lc--rust-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #dea584,
-		0 6px 20px 0 #dea584;
+  box-shadow: 0 4px 8px 0 #dea584, 0 6px 20px 0 #dea584;
+}
+
+.lc--scss-shadow:hover {
+  box-shadow: 0 4px 8px 0 #c6538c, 0 6px 20px 0 #c6538c;
 }
 
 .lc--typescript-shadow:hover {
-	box-shadow:
-		0 4px 8px 0 #3178c6,
-		0 6px 20px 0 #3178c6;
+  box-shadow: 0 4px 8px 0 #3178c6, 0 6px 20px 0 #3178c6;
+}
+
+.lc--vento-shadow:hover {
+  box-shadow: 0 4px 8px 0 #ff0080, 0 6px 20px 0 #ff0080;
 }

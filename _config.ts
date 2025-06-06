@@ -2,7 +2,6 @@ import lume from "lume/mod.ts";
 // Plugins:
 import robots from "lume/plugins/robots.ts";
 import date from "lume/plugins/date.ts";
-import minifyHTML from "lume/plugins/minify_html.ts";
 import readingInfo from "lume/plugins/reading_info.ts";
 
 const site = lume({ src: "src/" });
@@ -22,7 +21,6 @@ site
       ],
     })
   )
-  .use(minifyHTML())
   .use(date())
   .use(readingInfo());
 

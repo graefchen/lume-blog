@@ -4,23 +4,13 @@ projects:
     description: my website
     link: https://graefchen.github.io
 
-  - name: rtt
-    language: c
-    description: rotate by X
-    link: https://github.com/graefchen/rtt
-
   - name: ROT13
     language: rust
     description: fun recreational programming
     link: https://github.com/graefchen/ROT13
 
-  - name: esolang
-    language: c
-    description: collection of esoteric languages
-    link: https://github.com/graefchen/esolangs
-
   - name: lume-blog
-    language: css
+    language: vento
     description: this personal blog
     link: https://github.com/graefchen/lume-blog
 
@@ -29,20 +19,10 @@ projects:
     description: mos 6502 emulator
     link: https://github.com/graefchen/six-five-oh-two
 
-  - name: webdev
-    language: javascript
-    description: various things repository
-    link: https://github.com/graefchen/webdev
-
   - name: config
     language: nushell
     description: just config files
     link: https://github.com/graefchen/config
-
-  - name: graefs-stream
-    language: typescript
-    description: fresh app using stapil
-    link: https://github.com/graefchen/graefs-steam
 
   - name: stapil
     language: typescript
@@ -64,30 +44,15 @@ projects:
     description: portfolio website under 1kb
     link: https://github.com/graefchen/1kbpf
 
-  - name: starbound-nb
-    language: python
-    description: starbound jupyter notebook
-    link: https://github.com/graefchen/starbound-nb
-
   - name: chisai.css
-    language: css
+    language: scss
     description: minimal css framework
     link: https://github.com/graefchen/chisai.css
-
-  - name: gh-colors
-    language: javascript
-    description: 🎨 all github lang colors
-    link: https://github.com/graefchen/gh-colors
 
   - name: mini-server
     language: rust
     description: bad web server
     link: https://github.com/graefchen/mini-server
-
-  - name: walk
-    language: nushell
-    description: bookmark module
-    link: https://github.com/graefchen/walk
 
   - name: wrack
     language: rust
